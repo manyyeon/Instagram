@@ -37,5 +37,15 @@ class LoginViewController: UIViewController {
     
     // 가입하기 버튼
     @IBAction func registerButtonDidTap(_ sender: UIButton) {
+        // 화면 전환
+        // 1. 스토리보드를 생성
+        // 스토리보드도 직접 만들 수 있다
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        // 2. 뷰컨트롤러를 생성
+        let registerViewController = storyboard.instantiateViewController(withIdentifier: "RegisterVC") as! RegisterViewController
+        
+        // 3. 화면전환 메소드를 이용해서 화면을 전환
+//        self.present(registerViewController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(registerViewController, animated: true)
     }
 }

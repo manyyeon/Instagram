@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		56D6B989282A6E72007FBC60 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D6B988282A6E72007FBC60 /* Color+Extension.swift */; };
 		56D6B98B282A70FA007FBC60 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D6B98A282A70FA007FBC60 /* LoginViewController.swift */; };
+		56D6B98D282A763F007FBC60 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D6B98C282A763F007FBC60 /* RegisterViewController.swift */; };
 		56E3B6F12824E0EE00F920FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E3B6F02824E0EE00F920FC /* AppDelegate.swift */; };
 		56E3B6F32824E0EE00F920FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E3B6F22824E0EE00F920FC /* SceneDelegate.swift */; };
 		56E3B6F82824E0EE00F920FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E3B6F62824E0EE00F920FC /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		56D6B988282A6E72007FBC60 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		56D6B98A282A70FA007FBC60 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		56D6B98C282A763F007FBC60 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		56E3B6ED2824E0EE00F920FC /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56E3B6F02824E0EE00F920FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56E3B6F22824E0EE00F920FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 		56E3B6E42824E0ED00F920FC = {
 			isa = PBXGroup;
 			children = (
+				56D6B98C282A763F007FBC60 /* RegisterViewController.swift */,
 				56E3B6EF2824E0EE00F920FC /* Instagram */,
 				56E3B7062824E0EE00F920FC /* InstagramTests */,
 				56E3B7102824E0EE00F920FC /* InstagramUITests */,
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56D6B98B282A70FA007FBC60 /* LoginViewController.swift in Sources */,
+				56D6B98D282A763F007FBC60 /* RegisterViewController.swift in Sources */,
 				56E3B6F12824E0EE00F920FC /* AppDelegate.swift in Sources */,
 				56E3B6F32824E0EE00F920FC /* SceneDelegate.swift in Sources */,
 				56D6B989282A6E72007FBC60 /* Color+Extension.swift in Sources */,
