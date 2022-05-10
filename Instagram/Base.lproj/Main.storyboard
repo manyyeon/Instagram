@@ -286,6 +286,12 @@
                             <constraint firstItem="df7-Mn-SU5" firstAttribute="leading" secondItem="fF1-Qq-Q9z" secondAttribute="leading" constant="10" id="ueu-br-HMC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="a0q-c8-nu4" id="eWj-nF-D5K"/>
+                        <outlet property="nameTextField" destination="FGm-1q-BzO" id="4km-hZ-H6z"/>
+                        <outlet property="nicknameTextField" destination="x0x-eN-nNg" id="Bnq-2o-vgF"/>
+                        <outlet property="passwordTextField" destination="IHH-rh-Udw" id="Kyt-3r-jJF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCd-UC-Hz9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

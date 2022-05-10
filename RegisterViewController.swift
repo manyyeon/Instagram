@@ -8,22 +8,60 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    // MARK: - Properties
+    // 유효성 검사를 위한 프로퍼티
+    var isValidEmail = false
+    
+    var isValidName = false
+    
+    var isValidNickname = false
+    
+    var isValidPassword = false
+    
+    // Textfields
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBOutlet weak var nicknameTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    var textFields: [UITextField] {
+        [emailTextField, nameTextField, nicknameTextField, passwordTextField]
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupTextField()
     }
-    */
-
+    
+    // MARK: - Actions
+    @objc
+    func textFieldEditingChanged(_ sender: UITextField) {
+        let text = sender.text ?? ""
+        
+        switch sender {
+        case emailTextField:
+            print("email")
+        case nameTextField:
+            print("name")
+        case nicknameTextField:
+            print("nickname")
+        case passwordTextField:
+            print("password")
+        default:
+            fatalError("Missing TextField...")
+        }
+    }
+    
+    // MARK: - Helpers
+    private func setupTextField() {
+        textFields.forEach() { tf in
+            // emailTextField에 이벤트가 오면
+            // target은 누가 처리할거냐, action: 어디서 처리할거냐, for: 어떤 이벤트에 대해 처리할거냐
+            tf.addTarget(self, action: #selector(textFieldEditingChanged(_:)), for: .editingChanged)
+        }
+    }
 }
