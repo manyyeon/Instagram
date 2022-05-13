@@ -57,6 +57,10 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         setupTextField()
         setupAttribute()
+        
+        // bug fix
+        self.navigationController?
+            .interactivePopGestureRecognizer?.delegate = nil
     }
     
     // MARK: - Actions
@@ -80,6 +84,14 @@ class RegisterViewController: UIViewController {
             fatalError("Missing TextField...")
         }
     }
+    
+    @IBAction func backButtonDidTap(_ sender: UIBarButtonItem) {
+        // 뒤로가기
+        // LoginViewController에서 pushViewController를 썼다면 여기선 반대로 popViewController를 사용
+        self.navigationController?
+            .popViewController(animated: true) // 이전화면으로 돌아가기
+    }
+    
     
     // MARK: - Helpers
     private func setupTextField() {
